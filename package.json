@@ -13,6 +13,7 @@
     "publish": "turbo run publish"
   },
   "devDependencies": {
+    "rome": "10.0.1",
     "turbo": "1.6.3"
   }
 }
