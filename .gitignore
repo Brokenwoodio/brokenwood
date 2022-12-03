@@ -1,0 +1,26 @@
+# Node Env
+node_modules
+npm-debug.log
+yarn-error.log
+pnpm-debug.log
+
+# Out Dirs
+.next/**
+build/**
+dist/**
+tmp/**
+
+# Popular IDEs
+.idea
+.vscode/*
+*.launch
+
+# Vite, Playwright
+coverage
+
+# Turborepo
+.turbo
+
+# System Files
+.DS_Store
+Thumbs.db
