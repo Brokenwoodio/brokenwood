@@ -1,0 +1,43 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    /* Experimental Features */
+    "importsNotUsedAsValues": "error",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+
+    /* TSConfig Targets and Roots */
+    "lib": ["DOM", "DOM.Iterable", "ES2022", "ESNext.AsyncIterable"],
+    "typeRoots": ["node_modules/@types"],
+    "types": ["vitest/globals"],
+    "target": "ES2022",
+    "module": "ES2022",
+
+    /* TS HelperS */
+    "moduleResolution": "Node",
+    "importHelpers": true,
+    "inlineSourceMap": true,
+    "skipDefaultLibCheck": true,
+
+    /* TSConfig Paths*/
+    "baseUrl": ".",
+    "paths": { },
+
+    /* JS Checking */
+    "noEmit": true,
+    "allowJs": true,
+    "checkJs": true,
+
+    /* Strict Checks */
+    "allowSyntheticDefaultImports": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "strict": true,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "files": ["./@types/index.d.ts"],
+  "exclude": ["node_modules", "tmp"]
+}
