@@ -1,3 +1,30 @@
 {
-  "$schema": "https://turbo.build/schema.json"
+  "$schema": "https://turbo.build/schema.json",
+  "pipeline": {
+    "build": {
+      "dependsOn": [ "^build" ],
+      "outputs": [ "dist/**" ]
+    },
+    "spec": {
+      "dependsOn": [ "build" ],
+      "outputs": [ ],
+      "inputs": [
+        "packages/**/*.spec.tsx",
+        "packages/**/*.spec.ts",
+        "packages/**/*.tsx",
+        "packages/**/*.ts"
+      ]
+    },
+    "fmt": {
+      "outputs": [ ]
+    },
+    "publish": {
+      "dependsOn": [ "build", "fmt" ],
+      "outputs": [ ]
+    },
+
+    "dev": {
+      "cache": false
+    }
+  }
 }
